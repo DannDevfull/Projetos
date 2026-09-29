@@ -1,0 +1,217 @@
+/*Início da estilização Global*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    /*esse text-decoration serve para tirarmos a decoração de nossos textos. Aqui, no caso, foi os elementos na barra de navegação, ele tinham um tracinho embaixo*/
+    list-style: none;
+}
+
+header{
+    max-width: 1730px;
+    margin: auto;
+    display: flex;
+    padding: 40px 120px;
+    justify-content: space-between;
+
+    /*Nova escrita em CSS*/
+   /* & nav { 
+        
+        display: flex;
+        gap: 52px;
+
+
+        & ul{
+            display: flex;
+            gap: 52px;
+        }
+        deixei isso em comentário, pois existe essa possibilidade de fazer essa estilização em CSS na nossa NAV
+    }*/
+    & nav, nav ul{
+        display: flex;
+        align-items: center;
+        gap: 52px;
+        /*Ou seja, em nossa Nav E em nossa UL que esta em nossa Nav, 
+        queremos as seguintes estilizações*/
+
+        & li a{
+            color:#6B7280;
+            font-size: 18px;
+            letter-spacing: 2%;
+        }
+
+        & li:first-child a{
+            color: #000;
+            font-weight: 600;
+        }
+    
+    }
+   & button{
+
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #000;    
+        border-radius: 8px;
+        padding: 13px 35px 
+        
+        
+ 
+    }
+}
+
+section{
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px;
+    /*Configuração padrão de nossa seção.
+    Agora, vamos trabalhar com cada seção individualmente*/
+}
+
+button{
+    cursor: pointer;
+}
+/*Fim da estilização global*/
+
+/*Section Home*/
+.Home{
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+    & .content{
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+        & h1{
+            font-weight: 700;
+            color: #1F1F39;
+            font-size: 60px
+            
+;
+        }
+
+        & p {
+            color: #1F1F39B2;
+            font-size: 28px;
+            line-height: 48px;
+
+        }
+
+        & button{
+            width: 246.48px;
+            padding: 18.87px;
+            border-radius: 10.87px;
+            border: none;
+            background-color:#1F1F39;
+            color: white;
+
+            
+            font-weight: 700;
+            font-size: 24.24px;
+
+        }
+        
+    }
+}
+
+/*Section Portfólio*/
+.Portfólio{
+    & h2 {
+        width: 980px;
+
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 109px;
+    }
+
+    & .cards{
+        display: flex;
+        flex-wrap: wrap;
+        /*Essa propriedade com esse valor significa: que ele ocupa todo o espaço da Div principal  com essas divs com card, e quando ocupam todo o espaço da div principal, o Wrap quebra para a linha de baixo.
+        Cada Card possui 680px, o pai deles ( div principal) ocupa cerca de 1380 -- se não me engano -- cabe, então 2 cards por linha.*/
+        justify-content: space-between;
+        gap: 109px;
+
+        & .card{
+
+            & p{
+                margin-top: 25px;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 48px;
+                color: #000000B2;
+                /*Ele resolveu utilizar um span aqui. Fez isso, acho eu, pois não usou o strong, mas o <b>. Poderia fazer isso, mas prefiro usar o strong. Mas fica a opção*/
+
+            }
+        }
+    }
+}
+
+/*Section about*/
+.About{
+    background-color: #000;
+    color: #fff;
+
+    & h2{
+     
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 29px;
+    }
+
+    & .content{
+        
+        & h3{
+            
+            
+            font-weight: 500;
+            font-size: 40px;
+            margin-bottom: 55px;
+            
+        
+        }
+
+        & button{
+            border-radius: 10.87px;
+            padding: 18px 63px;
+            border: none;
+            background-color: #fff;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+}
+
+/*Rodapé*/
+footer{
+ 
+    
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px 120px;
+    background-color: #000;
+    color:  #FFFFFF80;
+    border-top: 1px solid #4F4F4F;
+    display: flex;
+    justify-content: space-between;
+
+    & .icons{
+        display: flex;
+        gap: 30px;
+
+        & img{
+            cursor: pointer;
+        }
+    }
+
+}
