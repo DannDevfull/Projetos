@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- VERSÃO DO HTML (NOVA 5) -->
+
+<!-- DENTRO DA TAG HTML FICA TODO O MEU SISTEMA WEB(SITE) -->
+<html lang="pt-br">
+
+<!-- Cabeça(head) Configurações GERAIS do site -->
+    <head>
+        <!-- Padrão Caracteres -->
+        <meta charset="UTF-8">
+        
+        <!-- COMPATIVEL COM CELULARES E COMPUTADORES -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- TITULO DO SITE -->
+        <title>Projeto - GTA</title>
+    </head>
+
+    <!-- TUDO QUE EU ENXERGO NO SITE -->
+    <body>
+        <p class="nome">Lucia</p>
+        <img class="personagem" id="person" src="img/lucia.png">
+        <!-- source = ORIGEM(onde ela tá?) -->
+        
+        <div class="texto">
+            <p class="selecao">Selecione o seu Personagem</p>
+            <h1>Não é só <br> um jogo</h1>
+            <p class="texto-apoio">Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma.</p>
+        </div>
+
+        <div class="menu">
+            
+            <img class="avatar" src="IMG/lucia.png" onclick="alterar(0)">
+        
+        
+            <img class="avatar" src="IMG/jason.png" onclick="alterar(1)">
+        
+        
+            <img class="avatar" src="IMG/cj.png" onclick="alterar(2)" >
+        
+            <button class="btn">📷</button>
+        </div>
+    
+
+        <script src="script.js"></script>
+    </body>
+</html>
