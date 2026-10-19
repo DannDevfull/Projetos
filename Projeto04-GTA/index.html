@@ -44,10 +44,15 @@
         
             <img class="avatar" src="IMG/cj.png" onclick="alterar(2)" >
         
-            <button class="btn">📷</button>
+            <label class="voces">📷
+                <!-- Um input do tipo arquivo que aceita todas as imagens -->
+                <input type="file" accept="image/*" hidden onchange = "LerFoto(this)">
+                <!-- onchance = toda vez que eu carrego a foto ele 'muda' e envia para a function. o This pega tidop que dentro do input e enviar.
+                 Quando mudar, dispara a function com o this pegando o que tem dentro do input. -->
+            </label>
         </div>
     
-
+        <script src=" https://js.puter.com/v2/ "></script>
         <script src="script.js"></script>
     </body>
 </html>
