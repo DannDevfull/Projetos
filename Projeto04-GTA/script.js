@@ -1,4 +1,4 @@
-function alterar(mudar){
+function alterar(mudar, photo){
     let nomeImagem;
     let nome;
    
@@ -15,7 +15,7 @@ function alterar(mudar){
         nome = "Cj"
         document.querySelector(".nome").style.color="#7ed37e"
     } else{
-        nomeImagem = desenho
+        nomeImagem = photo
         nome = 'Você'
         document.querySelector(".nome").style.color ="#e428"
 
@@ -55,7 +55,7 @@ leitor.onload = async function(){
             providerOptions: { background: "transparent" }
         })
         console.log(desenho)
-        alterar(3)
+        alterar(3, desenho)
 }
     // Faça algo com a imagem lida
 }
